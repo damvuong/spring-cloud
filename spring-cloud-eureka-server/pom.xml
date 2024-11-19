@@ -8,11 +8,11 @@
 		<version>3.3.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.spring-cloud.user-service</groupId>
-	<artifactId>spring-cloud-user-service</artifactId>
+	<groupId>com.spring-cloud.eureka</groupId>
+	<artifactId>spring-cloud-eureka-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-cloud-user-service</name>
-	<description>spring cloud user service</description>
+	<name>spring-cloud-eureka-server</name>
+	<description>spring cloud eureka server</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -32,23 +32,8 @@
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-
-		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
 
 		<dependency>
@@ -57,7 +42,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
