@@ -1,0 +1,9 @@
+services:
+  gateway:
+    build: spring-cloud-gateway/.
+  user-service:
+    build: spring-cloud-user-service/.
+  todo-list-service:
+    build: spring-cloud-todo-list-service/.
+
+networks:
