@@ -3,7 +3,17 @@ services:
     build: spring-cloud-gateway/.
   user-service:
     build: spring-cloud-user-service/.
+    networks:
+      local:
+        - ipv4_address: 10.0.0.1
   todo-list-service:
     build: spring-cloud-todo-list-service/.
-
+    networks:
+      local:
+        - ipv4_address: 10.0.0.2
 networks:
+  local:
+    ipam:
+      driver: bridge
+      config:
+        - subnet: "10.0.0.0/24"
