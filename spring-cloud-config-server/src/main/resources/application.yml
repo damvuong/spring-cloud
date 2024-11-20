@@ -7,4 +7,3 @@ spring:
         git:
           uri: https://github.com/damvuong/spring-cloud
           searchPaths: configuration
-          default-label: part3/centralize_configuration
