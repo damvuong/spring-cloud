@@ -6,4 +6,7 @@ spring:
       server:
         git:
           uri: https://github.com/damvuong/spring-cloud
-          searchPaths: configuration
+          searchPaths : configuration/**
+logging:
+  level:
+    org.springframework: DEBUG
