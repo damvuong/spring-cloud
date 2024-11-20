@@ -1,7 +1,23 @@
 spring:
   application:
     name: spring-cloud-todo-list-service
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka-server:8761/eureka/
+  profiles:
+    active: dev
+  config:
+    import: optional:configserver:http://config-server:8080
+---
+spring:
+  application:
+    name: spring-cloud-todo-list-service
+  profiles:
+    active: stg
+  config:
+    import: optional:configserver:http://config-server:8080
+---
+spring:
+  application:
+    name: spring-cloud-todo-list-service
+  profiles:
+    active: prod
+  config:
+    import: optional:configserver:http://config-server:8080
