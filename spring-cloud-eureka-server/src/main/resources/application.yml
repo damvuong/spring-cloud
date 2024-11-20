@@ -1,6 +1,6 @@
 spring:
   application:
-    name: spring-cloud-gateway
+    name: spring-cloud-eureka-server
   profiles:
     active: dev
   config:
@@ -8,7 +8,7 @@ spring:
 ---
 spring:
   application:
-    name: spring-cloud-gateway
+    name: spring-cloud-eureka-server
   profiles:
     active: stg
   config:
@@ -16,7 +16,7 @@ spring:
 ---
 spring:
   application:
-    name: spring-cloud-gateway
+    name: spring-cloud-eureka-server
   profiles:
     active: prod
   config:

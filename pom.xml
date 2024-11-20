@@ -20,5 +20,7 @@
         <module>spring-cloud-gateway</module>
         <module>spring-cloud-user-service</module>
         <module>spring-cloud-todo-list-service</module>
+        <module>spring-cloud-eureka-server</module>
+        <module>spring-cloud-config-server</module>
     </modules>
 </project>
